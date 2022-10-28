@@ -1,0 +1,21 @@
+<div class="containerInteracao">
+
+    <div class="barra">       
+        <app-barra></app-barra>
+    </div>
+    <div class="vida">
+        <app-vidas></app-vidas>
+    </div>
+
+</div>
+
+<div class="containerRespostas">
+    <h1>Traduza: <strong>How Are You?</strong></h1>
+    <form >            
+        <input placeholder="Tradução">            
+    </form>
+
+    <button
+    (click)="trocar()"
+    type="button" class="btn btn-success">Verificar</button>
+</div>

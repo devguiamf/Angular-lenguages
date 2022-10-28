@@ -1,0 +1,24 @@
+
+<div *ngIf="vidas == 3" class="coracao">
+    <img src="../../assets/coracao_cheio.png" alt="">
+    <img src="../../assets/coracao_cheio.png" alt="">
+    <img src="../../assets/coracao_cheio.png" alt="">
+</div>
+<div *ngIf="vidas == 2" class="coracao">
+    <img src="../../assets/coracao_vazio.png" alt="">
+    <img src="../../assets/coracao_cheio.png" alt="">
+    <img src="../../assets/coracao_cheio.png" alt="">
+</div>
+
+<div *ngIf="vidas === 1" class="coracao">
+    <img src="../../assets/coracao_vazio.png" alt="">
+    <img src="../../assets/coracao_vazio.png" alt="">
+    <img src="../../assets/coracao_cheio.png" alt="">
+</div>
+
+<div *ngIf="vidas === 0" class="coracao">
+    <img src="../../assets/coracao_vazio.png" alt="">
+    <img src="../../assets/coracao_vazio.png" alt="">
+    <img src="../../assets/coracao_vazio.png" alt="">
+</div>
+
