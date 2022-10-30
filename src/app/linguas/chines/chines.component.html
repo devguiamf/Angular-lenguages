@@ -1,0 +1,31 @@
+<div class="containerInteracao">
+
+  <div class="barra">
+      <app-barra [progresso]="progresso"></app-barra>
+  </div>
+  <div class="vida">
+      <app-vidas [vidas]="vidas"></app-vidas>
+  </div>
+
+</div>
+
+<div *ngIf="(vidas >= 0) && (progresso < 100)" class="containerRespostas">
+  <h1 ([ngModel])="index" >Traduza: <strong>{{frases[index].frase}}</strong></h1>
+  <form >
+    <input (input)="atualizaRespota($event)" [value]="fraseTraduzida" >
+  </form>
+
+  <button type="button" (click)="verificaFrase()" class="btn btn-success">Verificar</button>
+</div>
+
+<div *ngIf="vidas < 0" class="containerPerdeu">
+<h1><strong>Voce Perdeu</strong><img class="morte" src="../../assets/morte.png" alt=""></h1>
+
+<button type="button" (click)="reload()" id="btDerroda" class="btn btn-success">Jogar novamente</button>
+</div>
+
+<div *ngIf="(vidas > 0) && (progresso == 100)" class="containerPerdeu">
+<h1><strong>PARABÉNS Voce Ganhou</strong><img class="morte" src="../../assets/parabens.png" alt=""></h1>
+
+<button type="button" (click)="reload()" id="btDerroda" class="btn btn-success">Jogar novamente</button>
+</div>

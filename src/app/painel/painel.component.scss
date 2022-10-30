@@ -1,0 +1,40 @@
+.container{
+  background: rgb(157,62,67);
+  background: linear-gradient(90deg, rgba(157,62,67,0.87718837535014) 0%, rgba(71,77,158,0.8603816526610644) 100%);
+  padding: 20px;
+}
+
+.containercard{
+  display:flex;
+  justify-content: space-around;
+}
+
+
+.containerFilho{
+  text-align: center;
+  background-color: #2C2C2C;
+  color: white;
+  min-width: 230px;
+  display: inline-block;
+  opacity: 50%;
+}
+
+.containerFilho:hover{
+
+  background-color: #2C2C2C;
+  opacity: 100;
+}
+
+.imgBandeira{
+  width: 50px;
+  padding-left: 10px;
+}
+
+.containerPainel{
+  text-align: center;
+  background-color: #2C2C2C;
+  color: white;
+  margin-top: 50px;
+  height: 350px;
+}
+

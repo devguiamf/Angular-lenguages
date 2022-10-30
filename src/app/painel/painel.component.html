@@ -1,0 +1,41 @@
+<mat-card class="container mat-elevation-z10">
+
+  <div class="containercard">
+
+      <a routerLink="/ingles" (click)="ativaTab('eng')">
+        <mat-card id="eng" class="containerFilho mat-elevation-z10">
+          <h1>Aprendendo Ingles</h1>
+          <img class="imgBandeira" src="../../assets/eua.png">
+        </mat-card>
+      </a>
+
+      <a routerLink="/chines" (click)="ativaTab('ch')" >
+        <mat-card id="ch" class="containerFilho mat-elevation-z10">
+          <h1>Aprendendo Mandarim</h1>
+          <img class="imgBandeira" src="../../assets/china.png">
+        </mat-card>
+      </a>
+
+      <a routerLink="/espanhol" (click)="ativaTab('es')" >
+        <mat-card id="es" class="containerFilho mat-elevation-z10">
+          <h1>Aprendendo Espanhol</h1>
+          <img class="imgBandeira" src="../../assets/espanha.png">
+        </mat-card>
+      </a>
+
+      <a routerLink="/alemao" (click)="ativaTab('ale')" >
+        <mat-card id="ale" class="containerFilho mat-elevation-z10">
+          <h1>Aprendendo Alemão</h1>
+          <img class="imgBandeira" src="../../assets/alemanha.png">
+        </mat-card>
+      </a>
+
+  </div>
+
+  <mat-card class="containerPainel mat-elevation-z10">
+      <router-outlet></router-outlet>
+  </mat-card>
+
+
+
+</mat-card>

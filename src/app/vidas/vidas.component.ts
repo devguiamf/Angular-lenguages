@@ -7,12 +7,17 @@ import { Injectable } from '@angular/core';
 })
 
 export class VidasComponent implements OnInit {
-  
-  @Input() vidas:number = 3
+
+  @Input() public vidas = 3
   constructor() {}
 
   ngOnInit(): void {
+    console.log();
   }
+
+
+
+
 
 
 }

@@ -1,10 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    padding: 50px ; 
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding: 50px ;
     max-height: 600px;
     background: #2C2C2C;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.correto{
+  background-color: forestgreen;
+  color: white;
+}
+.errado{
+  background-color: red;
+  color: white;
+
 }
