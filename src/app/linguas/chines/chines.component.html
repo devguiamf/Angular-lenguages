@@ -10,7 +10,7 @@
 </div>
 
 <div *ngIf="(vidas >= 0) && (progresso < 100)" class="containerRespostas">
-  <h1 ([ngModel])="index" >Traduza: <strong>{{frases[index].frase}}</strong></h1>
+  <h1 >Traduza: <strong>{{frases[index].frase}}</strong></h1>
   <form >
     <input (input)="atualizaRespota($event)" [value]="fraseTraduzida" >
   </form>

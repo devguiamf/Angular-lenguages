@@ -63,10 +63,6 @@ export class AlemaoComponent implements OnInit {
       this.vidas = this.vidas -1
       console.log(this.vidas);
 
-      if (this.vidas == 0) {
-
-
-      }
     }
 
   }

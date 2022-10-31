@@ -65,10 +65,10 @@ export class InglesComponent implements OnInit {
       this.vidas = this.vidas -1
       console.log(this.vidas);
 
-      if (this.vidas == 0) {
-
-
-      }
+     if (this.vidas == -1) {
+      this.index = 0
+      this.fraseTraduzida = ''
+     }
     }
 
   }
